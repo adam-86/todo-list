@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link id="stylesheet" rel="stylesheet" href="master.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <title>Task List</title>
+</head>
+<body>
+
+<div class="hide_scroll">
+
+  <div class="main_container">
+
+    <div id="menu_popout">
+
+      <div class="popout_header">
+
+      <h2>Menu</h2>
+
+      <button id="create_task_button">Create New</button>
+
+      <button id="remove_all">Remove All</button>
+
+      <p id="mouseout_tip">(mouseout to close menu)</p>
+      </div>
+    </div>
+
+  <div id="background_blur" hidden></div>
+
+    <div class="header_main">
+
+      <h2 class="main_header_h2">Task List</h2>
+
+      <div id="hamburger_menu" class="hamburger_menu">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+
+      </div>
+
+      <br>
+    </div>
+
+    <label class="main_date_label" for="main_date">Todays Date</label>
+
+    <div id="main_date"></div>
+
+    <label class="clock_label" for="current_time">Current Time</label>
+    <div id="clock"></div>
+
+
+  <div id="task_list_container">
+
+
+    <div class="task_item">
+      <p class="completed_check">Task Complete &checkmark;</p>
+      <div class="round_thing">
+        <div class="label_container">
+          <span>Delete</span>
+          <span>or</span>
+          <span>Complete</span>
+        </div>
+        <button class="complete_toggle"></button>
+        <button class="delete_toggle"></button>
+      </div>
+
+
+      <p id="task_date"><strong>Date entered: </strong><i>1/12/2018</i></p>
+      <p id="task_name"><strong>Task Name: </strong><i>&downarrow; Click to expand details for instructions. </i></p>
+      <p class="task_details_tip">(click to open)</p>
+      <div class="show_details_icon">
+        <div class="detail_toggle_line"></div>
+        <div class="detail_toggle_line"></div>
+        <div class="detail_toggle_line"></div>
+      </div>
+
+      <p class="details_toggle">Details</p>
+
+
+      <div class="task_details_p" style="opacity: 0">
+      <h4><strong>Instructions</strong></h4>
+      <p id="details_p"></p>
+        <ul>
+          <li>Click the menu icon on the top left to create a new task, or clear the entire list.</li>
+
+          <li>Click the round menu to the left to delete individual tasks or to mark them as complete.</li>
+
+          <li>To toggle this tab, click the the expand details icon again.</li>
+        </ul>
+
+
+
+      </div>
+    </div> <!-- end task item-->
+  </div>
+
+    <div id="creat_new_task_interface" class="create_new_task_interface" hidden>
+
+      <div class="create_task_header">
+
+      <h3 class="create_task_header_h2">Create New</h3>
+
+        <div class="input_container">
+
+          <h2 class="task_input_labels">Title:</h2>
+
+          <input type="text" class="input" id="new_title" placeholder="Task Name...">
+        </div>
+
+        <div class="input_container">
+
+          <h2 class="task_input_labels">Desc:</h2>
+
+          <input type="text" class="input" id="new_description" placeholder="Task Description...">
+
+        </div>
+
+        <button id="new_submit" class="create_buttons">Submit</button>
+        <button id="cancel_creation" class="create_buttons">Cancel</button>
+
+      </div>
+    </div>
+  </div>
+    <footer>
+
+    </footer>
+  </div>
+
+
+<script src="main.js" charset="utf-8"></script>
+</body>
+</html>
