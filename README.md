@@ -1,8 +1,12 @@
-# Todo List
+# Task List
 
-## Veiw project here: <a href="https://adam-86.github.io/todo-list/" target="_blank">Todo List</a>
+## Click here to try it out in your browser: <a href="https://adam-86.github.io/todo-list/" target="_blank">Task List</a>
 
 ## What is it?
-A small javscript todo list created with the sole purpose of repetition and learning.
+A javascript, HTML, and CSS task list. After creating the web application, I thought it would be fun to convert and package it into a stand alone desktop application with the Electron Framework.
 
+## Screenshot:
+![Screenshot](small-screenshot.png?raw=true)
 
+## Running as a desktop application
+![Screenshot](app-screenshot.png?raw=true)
