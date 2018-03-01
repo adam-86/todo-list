@@ -6,9 +6,9 @@ function startTime() {
     let h = today.getHours();
     let m = today.getMinutes();
     let s = today.getSeconds();
-
     m = checkTime(m);
     s = checkTime(s);
+
     if(h > 12){
       h = h - 12;
     }
@@ -24,9 +24,9 @@ function checkTime(i) {
 }
 //get date
 let today = new Date();
-const dd = today.getDate();
+let dd = today.getDate();
 let mm = today.getMonth()+1;
-const yyyy = today.getFullYear();
+let yyyy = today.getFullYear();
 
 if(dd<10) {
     dd = '0'+dd
